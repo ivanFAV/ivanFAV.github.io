@@ -1,0 +1,264 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: #e2e8f0; 
+    margin: 0;
+    padding: 0; 
+    background-color: #0a0b10; 
+    background-image: radial-gradient(circle at 50% 50%, #141923 0%, #0a0b10 100%);
+    font-size: 18px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.6) contrast(1.1); 
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(10, 11, 16, 0.75); 
+    backdrop-filter: blur(8px);
+    padding: 30px 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 242, 254, 0.3); 
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.15);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* --- LOGO Y TITULARES --- */
+.header-container h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f2fe; 
+    font-size: 42px;
+    margin: 0 0 5px 0;
+    letter-spacing: 4px;
+    text-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
+}
+
+.header-container h6 {
+    color: #9d4edd; 
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-container ul {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.nav-container li {
+    list-style-type: none; 
+    display: inline-block; 
+    margin: 5px 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.nav-container li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    padding: 8px 16px;
+    border: 1px solid #9d4edd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(157, 78, 221, 0.1);
+}
+
+.nav-container li a:hover {
+    background-color: #9d4edd;
+    color: #fff;
+    box-shadow: 0 0 15px #9d4edd;
+    transform: translateY(-2px);
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.info-section {
+    background: rgba(20, 25, 35, 0.6);
+    border: 1px solid #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f2fe; 
+    border-bottom: 2px solid #00f2fe; 
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 24px;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+}
+
+p {
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff9e00; 
+    padding-left: 15px;
+}
+
+/* Lista Resumen */
+.summary-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #9d4edd;
+}
+
+.summary-box h4 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.tech-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.tech-list li {
+    margin: 10px 0;
+    color: #94a3b8;
+    list-style-type: square;
+}
+
+/* --- TABLA FUTURISTA --- */
+.table-container {
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    background-color: rgba(15, 23, 42, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+}
+
+table, th, td {
+    border: 1px solid #1e293b; 
+    padding: 14px;
+    text-align: left;
+}
+
+thead {
+    background-color: #1e1b4b;
+    font-family: 'Orbitron', sans-serif;
+}
+
+thead th {
+    color: #00f2fe;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+tbody tr:hover {
+    background: rgba(0, 242, 254, 0.05);
+}
+
+.highlight-td {
+    color: #ff9e00;
+    font-weight: bold;
+}
+
+/* --- CONTENIDO EXTRA / DESCARGA --- */
+.contenido-extra {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); 
+    border-radius: 12px;
+    margin-top: 90px;
+    border: 1px solid #9d4edd; 
+}
+
+.btn-download {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ff9e00;
+    color: #000;
+    padding: 12px 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255, 158, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background: #fff;
+    box-shadow: 0 0 25px rgba(255, 158, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* --- FOOTER / CONTACTO --- */
+.contacto {
+    text-align: center;
+    background-color: #050508; 
+    color: #64748b;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
+
+.social-share {
+    margin-bottom: 15px;
+}
+
+.social-share span {
+    margin-right: 10px;
+    font-family: 'Orbitron', sans-serif;
+    color: #94a3b8;
+}
+
+.contacto a {
+    color: #00f2fe;
+    margin: 0 10px;
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.contacto a:hover {
+    color: #9d4edd;
+    text-shadow: 0 0 8px #9d4edd;
+}
+
+.copyright {
+    border: none !important;
+    padding: 0 !important;
+    margin: 10px 0 0 0 !important;
+    font-size: 12px;
+}
